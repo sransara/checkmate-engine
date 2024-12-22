@@ -129,7 +129,7 @@ impl Piece {
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Square {
     file: i32,
     rank: i32,
@@ -227,7 +227,7 @@ struct GameState {
     fullmove: i32,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Move {
     start: Square,
     end: Square,
@@ -316,6 +316,7 @@ impl GameState {
             self.halfmove += 1;
         }
         self.fullmove += 1;
+        self.moves.push(*move_);
     }
 }
 
