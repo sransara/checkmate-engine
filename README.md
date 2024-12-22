@@ -4,11 +4,9 @@ Building a chess engine for
 
 - the [Kaggle Chess AI challenge](https://www.kaggle.com/competitions/fide-google-efficiency-chess-ai-challenge/)
 - learn how chess engines work
+- Chess Engines are known to use lot of tips and tricks to be highly efficient in analyzing a large search space. Personally I am interested in figuring out whether a compiler can be smart enough to infer these tricks just by static analysis of a high level language constructs.
 
-Chess Engines are known to use lot of tips and tricks to be highly efficient in analyzing a large search space.
-Personally I am interested in figuring out whether a compiler can be smart enough to infer these tricks just by static analysis of a high level language constructs.
-
-General plan by considering components of a chess engine:
+## General plan by considering components of a chess engine:
 
 - Board representation
 	- be able to read from some serialization (like FEN) into this board representation
