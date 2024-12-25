@@ -1,0 +1,6 @@
+{
+  // format on save for rust files
+  "[rust]": {
+    "editor.formatOnSave": true
+  }
+}

@@ -273,7 +273,7 @@ impl GameState {
         let turn = Color::from_str(turn);
         let castling_rights = match castling_rights {
             "-" => CastlingRights::from_str(""),
-            s => CastlingRights::from_str(s)
+            s => CastlingRights::from_str(s),
         };
         let en_passant = match en_passant {
             "-" => None,
